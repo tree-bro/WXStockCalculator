@@ -1,0 +1,72 @@
+<!--pages/calculator/calculator.wxml-->
+<view class="table-container">
+  <view class="Parameters">
+    <label class="TitleCell">股票基本资料</label>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">股票代码</label>
+      <input class="SubParameterValue" id="StockID" placeholder='股票代码' value='600000'></input>
+    </view>
+    <label class="TitleCell">服务器可得参数</label>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">市价</label>
+      <input class='SubParameterValue' id="MarketPrice" placeholder='市价' value='10.0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">每股盈利</label>
+      <input class="SubParameterValue" id="ProfitPerShare" placeholder='每股盈利' value='1.0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">每股分红比例</label>
+      <input class="SubParameterValue" id="ProfitSharingRatio" placeholder='每股分红比例' value='20.0'></input>
+    </view>
+    <label class="TitleCell">手动输入参数</label>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">交易印花税</label>
+      <input class='SubParameterValue' id="TradeTaxRatio" placeholder='交易印花税' value='1.0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">企业存续期</label>
+      <input class='SubParameterValue' id="CompanyDuration" placeholder='企业存续期' value='30'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">折现率</label>
+      <input class='SubParameterValue' id="DiscountRatio" placeholder='折现率' value='7.0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">自然增长率</label>
+      <input class='SubParameterValue' id="NaturalGrowthRate" placeholder='自然增长率' value='0.5'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">高速增长率</label>
+      <input class='SubParameterValue' id="HighSpeedGrowthRate" placeholder='高速增长率' value='5.0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">高速增长期</label>
+      <input class='SubParameterValue' id="HighSpeedGrowthDuration" placeholder='高速增长期' value='0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">红股税率</label>
+      <input class='SubParameterValue' id="ProfitSharingTaxRate" placeholder='红股税率' value='0.5'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">衰退周期</label>
+      <input class='SubParameterValue' id="DepressionCycle" placeholder='衰退周期' value='7'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">衰退期损失率</label>
+      <input class='SubParameterValue' id="DepressionCycle" placeholder='衰退期损失率' value='95.0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">衰退期损失率</label>
+      <input class='SubParameterValue' id="DepressionLossRate" placeholder='衰退期损失率' value='95.0'></input>
+    </view>
+    <view class="SubParameterPair">
+      <label class="SubParameterKey">平均持股周期</label>
+      <input class='SubParameterValue' id="StockHeldDuration" placeholder='平均持股周期' value='5'></input>
+    </view>
+  </view>
+  <view class="Buttons">
+    <button class="UtilButton" id="BtnCalculate" bindtap='btnCalculateClicked'>计算内在价值</button>
+    <button class="UtilButton" id="BtnParseCompanyInfo" bindtap='btnParseCompanyInfoClicked'>读取服务器资料</button>
+  </view>
+</view>

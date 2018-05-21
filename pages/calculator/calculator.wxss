@@ -1,0 +1,48 @@
+/* pages/calculator/calculator.wxss */
+.Parameters {
+  display: table;
+}
+
+.SubParameterPair {
+  display: table-row;
+  vertical-align:  middle;
+  margin: 30px;
+}
+
+.SubParameterKey {
+  display: table-cell;
+  margin-right: 10px;
+  font-family:  monospace;
+  font-size: medium;
+  color: blue;
+}
+
+.SubParameterValue {
+  display: table-cell;
+  margin-right: 10px;
+  font-family:  monospace;
+  font-size: medium;
+  color: olive;
+  border-bottom: 1px;
+}
+
+.TitleCell {
+  display: table-row;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-size:  large;
+  color: coral;
+}
+
+.UtilButton{
+  display: block;
+  margin: 10px;
+  background-color:  bisque;
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
