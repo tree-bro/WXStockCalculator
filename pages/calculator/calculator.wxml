@@ -4,65 +4,65 @@
     <label class="TitleCell">股票基本资料</label>
     <view class="SubParameterPair">
       <label class="SubParameterKey">股票代码</label>
-      <input class="SubParameterValue" id="StockID" value='600000' bindblur='setStockID'></input>
+      <input class="SubParameterValue" id="StockID" value="{{StockID}}" bindblur='setStockID'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">股票名称</label>
-      <input class="SubParameterValue" id="StockName" value='' bindblur='setStockName'></input>
+      <input class="SubParameterValue" id="StockName" value="{{StockName}}" bindblur='setStockName'></input>
     </view>
     <label class="TitleCell">服务器可得参数</label>
     <view class="SubParameterPair">
       <label class="SubParameterKey">市价</label>
-      <input class='SubParameterValue' id="MarketPrice" value='10.0' bindblur='setMarketPrice'></input>
+      <input class='SubParameterValue' id="MarketPrice" value="{{MarketPrice}}" bindblur='setMarketPrice'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">每股盈利</label>
-      <input class="SubParameterValue" id="ProfitPerShare" value='1.0' bindblur='setProfitPerShare'></input>
+      <input class="SubParameterValue" id="ProfitPerShare" value="{{ProfitPerShare}}" bindblur='setProfitPerShare'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">每股分红比例</label>
-      <input class="SubParameterValue" id="ProfitSharingRatio" value='20.0' bindblur='setProfitSharingRatio'></input>
+      <input class="SubParameterValue" id="ProfitSharingRatio" value="{{ProfitSharingRatio}}" bindblur='setProfitSharingRatio'></input>
     </view>
     <label class="TitleCell">手动输入参数</label>
     <view class="SubParameterPair">
       <label class="SubParameterKey">交易印花税</label>
-      <input class='SubParameterValue' id="TradeTaxRatio" value='1.0' bindblur='setTradeTax'></input>
+      <input class='SubParameterValue' id="TradeTaxRatio" value="{{TradeTax}}" bindblur='setTradeTax'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">企业存续期</label>
-      <input class='SubParameterValue' id="CompanyDuration" value='30' bindblur='setCompanyDuration'></input>
+      <input class='SubParameterValue' id="CompanyDuration" value="{{CompanyDuration}}" bindblur='setCompanyDuration'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">折现率</label>
-      <input class='SubParameterValue' id="DiscountRatio" value='7.0' bindblur='setDiscountRate'></input>
+      <input class='SubParameterValue' id="DiscountRatio" value="{{DiscountRatio}}" bindblur='setDiscountRate'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">自然增长率</label>
-      <input class='SubParameterValue' id="NaturalGrowthRate" value='0.5' bindblur='setNaturalGrowthRate'></input>
+      <input class='SubParameterValue' id="NaturalGrowthRate" value="{{NaturalGrowthRate}}" bindblur='setNaturalGrowthRate'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">高速增长率</label>
-      <input class='SubParameterValue' id="HighSpeedGrowthRate" value='5.0' bindblur='setHighSpeedGrowthRate'></input>
+      <input class='SubParameterValue' id="HighSpeedGrowthRate" value="{{HighSpeedGrowthRate}}" bindblur='setHighSpeedGrowthRate'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">高速增长期</label>
-      <input class='SubParameterValue' id="HighSpeedGrowthDuration" value='0' bindblur='setHighSpeedGrowthDuration'></input>
+      <input class='SubParameterValue' id="HighSpeedGrowthDuration" value="{{HighSpeedGrowthDuration}}" bindblur='setHighSpeedGrowthDuration'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">红股税率</label>
-      <input class='SubParameterValue' id="ProfitSharingTaxRate" value='0.5' bindblur='setProfitSharingTax'></input>
+      <input class='SubParameterValue' id="ProfitSharingTaxRate" value="{{ProfitSharingTax}}" bindblur='setProfitSharingTax'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">衰退周期</label>
-      <input class='SubParameterValue' id="DepressionCycle" value='7' bindblur='setDepressionCycle'></input>
+      <input class='SubParameterValue' id="DepressionCycle" value="{{DepressionCycle}}" bindblur='setDepressionCycle'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">衰退期损失率</label>
-      <input class='SubParameterValue' id="DepressionCycle" value='95.0' bindblur='setDepressionLossRate'></input>
+      <input class='SubParameterValue' id="DepressionCycle" value="{{DepressionLossRate}}" bindblur='setDepressionLossRate'></input>
     </view>
     <view class="SubParameterPair">
       <label class="SubParameterKey">平均持股周期</label>
-      <input class='SubParameterValue' id="StockHeldDuration" value='5' bindblur='setStockHeldDuration'></input>
+      <input class='SubParameterValue' id="StockHeldDuration" value="{{StockHeldDuration}}" bindblur='setStockHeldDuration'></input>
     </view>
   </view>
   <view class="Buttons">
